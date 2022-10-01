@@ -76,7 +76,6 @@ function SortingVisualizer() {
 
     useEffect(() => {
         resetArray
-        mergeSort
     }, [array])
 
 
