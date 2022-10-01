@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { getMergeSortAnimations } from '../SortingAlgorithmns/sortingAlgorithmns';
 import './SortingVisualizer.css'
 
-const ANIMATION_SPEED_MS = 15;
+const ANIMATION_SPEED_MS = 10;
 
-const NUMBER_OF_ARRAY_BARS = 25;
+const NUMBER_OF_ARRAY_BARS = 20;
 
 const PRIMARY_COLOR = 'rgb(0, 213, 255)';
 
@@ -16,7 +16,7 @@ function SortingVisualizer() {
     const resetArray = () => {
         const array = []
         for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-            array.push(randomNumber(10, 400))
+            array.push(randomNumber(5, 500))
         }
         setArray(array)
     }
