@@ -61,18 +61,18 @@ function SortingVisualizer() {
         }
     }
 
-    const testSortingAlgorithms = () => {
-        for (let i = 0; i < 250; i++) {
-            const array = [];
-            const length = randomNumber(1, 1000);
-            for (let i = 0; i < length; i++) {
-                array.push(randomNumber(-1000, 1000));
-            }
-            const javaScriptSortedArray = array.sort((a, b) => a - b);
-            const mergeSortedArray = mergeSort(array);
-            console.log(arraysAreEqual(javaScriptSortedArray, mergeSortedArray));
-        }
-    }
+    // const testSortingAlgorithms = () => {
+    //     for (let i = 0; i < 250; i++) {
+    //         const array = [];
+    //         const length = randomNumber(1, 1000);
+    //         for (let i = 0; i < length; i++) {
+    //             array.push(randomNumber(-1000, 1000));
+    //         }
+    //         const javaScriptSortedArray = array.sort((a, b) => a - b);
+    //         const mergeSortedArray = mergeSort(array);
+    //         console.log(arraysAreEqual(javaScriptSortedArray, mergeSortedArray));
+    //     }
+    // }
 
     useEffect(() => {
         resetArray
