@@ -25,18 +25,6 @@ function SortingVisualizer() {
         return Math.floor(Math.random() * (max - min + 1) + min)
     }
 
-    /* Testing */
-    // function arraysAreEqual(arrayOne, x) {
-    //     if (arrayOne.length !== arrayTwo.length) return false;
-    //     for (let i = 0; i < arrayOne.length; i++) {
-    //         if (arrayOne[i] !== arrayTwo[i]) {
-    //             return false;
-    //         }
-    //     }
-    //     return true;
-    // }
-
-    /* Sorting Algo */
     const mergeSort = () => {
         const animations = getMergeSortAnimations(array);
         for (let i = 0; i < animations.length; i++) {
@@ -61,22 +49,9 @@ function SortingVisualizer() {
         }
     }
 
-    // const testSortingAlgorithms = () => {
-    //     for (let i = 0; i < 250; i++) {
-    //         const array = [];
-    //         const length = randomNumber(1, 1000);
-    //         for (let i = 0; i < length; i++) {
-    //             array.push(randomNumber(-1000, 1000));
-    //         }
-    //         const javaScriptSortedArray = array.sort((a, b) => a - b);
-    //         const mergeSortedArray = mergeSort(array);
-    //         console.log(arraysAreEqual(javaScriptSortedArray, mergeSortedArray));
-    //     }
-    // }
-
     useEffect(() => {
         resetArray
-    }, [array])
+    }, [])
 
 
     return (
@@ -86,8 +61,6 @@ function SortingVisualizer() {
             </div>
 
             <div className="Wrapper">
-
-
                 <div className="arrayContainer">
                     {array.map((value, idx) => {
                         return (
@@ -97,13 +70,10 @@ function SortingVisualizer() {
                         )
                     })}
                 </div>
-
                 <div className="buttonContainer">
                     <button onClick={() => resetArray()}>Reset</button>
                     <button onClick={() => mergeSort(array)}>Sort</button>
-                    {/* <button onClick={() => testSortingAlgorithms()}>Test</button> */}
                 </div>
-
             </div>
         </>
     )
