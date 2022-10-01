@@ -4,7 +4,7 @@ import './SortingVisualizer.css'
 
 const ANIMATION_SPEED_MS = 10;
 
-const NUMBER_OF_ARRAY_BARS = 20;
+const NUMBER_OF_ARRAY_BARS = 25;
 
 const PRIMARY_COLOR = 'rgb(0, 213, 255)';
 
@@ -38,6 +38,7 @@ function SortingVisualizer() {
                 setTimeout(() => {
                     barOneStyle.backgroundColor = color;
                     barTwoStyle.backgroundColor = color;
+
                 }, i * ANIMATION_SPEED_MS);
             } else {
                 setTimeout(() => {
