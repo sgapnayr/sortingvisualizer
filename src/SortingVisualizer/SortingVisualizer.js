@@ -59,7 +59,6 @@ function SortingVisualizer() {
             <div className="title">
                 <h2><strong>Sorting</strong> Visualizer</h2>
             </div>
-
             <div className="Wrapper">
                 <div className="arrayContainer">
                     {array.map((value, idx) => {
