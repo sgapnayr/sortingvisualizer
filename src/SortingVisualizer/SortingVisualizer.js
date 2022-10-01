@@ -4,19 +4,21 @@ import './SortingVisualizer.css'
 
 const ANIMATION_SPEED_MS = 10;
 
-const NUMBER_OF_ARRAY_BARS = 25;
+const NUMBER_OF_ARRAY_BARS = 20;
 
-const PRIMARY_COLOR = 'rgb(0, 213, 255)';
+const PRIMARY_COLOR = `rgba(255, 0, 237, .75)`;
 
-const SECONDARY_COLOR = 'rgb(255, 40, 251)';
+const SECONDARY_COLOR = `rgba(0, 213, 255, .75)`;
 
 function SortingVisualizer() {
-    const [array, setArray] = useState([])
+    const [array, setArray] = useState([82, 205, 148, 398, 452, 77, 42, 203, 407, 66, 279, 245, 273, 438, 397, 112, 259, 235, 201, 119])
+    const [isSorting, setIsSorting] = useState(false)
 
     const resetArray = () => {
+        const arrayBars = document.getElementsByClassName('arrayBar');
         const array = []
         for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-            array.push(randomNumber(5, 500))
+            array.push(randomNumber(25, 500))
         }
         setArray(array)
     }
@@ -38,7 +40,6 @@ function SortingVisualizer() {
                 setTimeout(() => {
                     barOneStyle.backgroundColor = color;
                     barTwoStyle.backgroundColor = color;
-
                 }, i * ANIMATION_SPEED_MS);
             } else {
                 setTimeout(() => {
@@ -57,21 +58,24 @@ function SortingVisualizer() {
 
     return (
         <>
-            <div className="title">
-                <h2><strong>Sorting</strong> Visualizer</h2>
+            <div className="title e">
+                <h2><strong>Sorting Visualizer</strong></h2>
             </div>
+
+            <div className="titleReflection">asdf</div>
+
             <div className="Wrapper">
                 <div className="arrayContainer">
                     {array.map((value, idx) => {
                         return (
-                            <div className='arrayBar' key={idx} style={{ height: `${value}px` }}>
+                            <div className={isSorting ? 'reset' : 'arrayBar'} key={idx} style={{ height: `${value}px` }}>
                                 .
                             </div>
                         )
                     })}
                 </div>
                 <div className="buttonContainer">
-                    <button onClick={() => resetArray()}>Reset</button>
+                    <button onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
                     <button onClick={() => mergeSort(array)}>Sort</button>
                 </div>
             </div>

@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  color: white;
 }
 
 .App {
@@ -13,13 +14,33 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
+  background: rgb(30, 29, 29);
 }
 
 .title {
+  background: rgb(20, 244, 255);
+  background: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 1rem;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+  text-shadow: 1px 1px 12px rgba(255, 255, 255, .1);
+  border: 2px solid rgb(20, 244, 255);
+  border-image: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%) 1;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 1px 1px 12px rgba(255, 255, 255, .1);
+}
+
+
+.titleReflection {
+  width: 75%;
+  background: rgb(20, 244, 255);
+  background: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%);
+  transform: perspective(1em) rotateX(18deg);
+  filter: blur(1em);
+  margin-top: 1rem;
 }
 
 strong {
