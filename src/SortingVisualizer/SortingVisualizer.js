@@ -26,15 +26,15 @@ function SortingVisualizer() {
     }
 
     /* Testing */
-    function arraysAreEqual(arrayOne, x) {
-        if (arrayOne.length !== arrayTwo.length) return false;
-        for (let i = 0; i < arrayOne.length; i++) {
-            if (arrayOne[i] !== arrayTwo[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
+    // function arraysAreEqual(arrayOne, x) {
+    //     if (arrayOne.length !== arrayTwo.length) return false;
+    //     for (let i = 0; i < arrayOne.length; i++) {
+    //         if (arrayOne[i] !== arrayTwo[i]) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
 
     /* Sorting Algo */
     const mergeSort = () => {
