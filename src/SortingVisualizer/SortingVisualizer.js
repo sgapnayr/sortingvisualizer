@@ -12,7 +12,6 @@ const SECONDARY_COLOR = `rgba(0, 213, 255, .75)`;
 
 function SortingVisualizer() {
     const [array, setArray] = useState([82, 205, 148, 398, 452, 77, 42, 203, 407, 66, 279, 245, 273, 438, 397, 112, 259, 235, 201, 119])
-    const [isSorting, setIsSorting] = useState(false)
 
     const resetArray = () => {
         const array = []
@@ -50,14 +49,9 @@ function SortingVisualizer() {
         }
     }
 
-    useEffect(() => {
-        resetArray
-    }, [])
-
-
     return (
         <>
-            <div className="title e">
+            <div className="title">
                 <h2><strong>Sorting Visualizer</strong></h2>
             </div>
 
@@ -67,7 +61,7 @@ function SortingVisualizer() {
                 <div className="arrayContainer">
                     {array.map((value, idx) => {
                         return (
-                            <div className={isSorting ? 'reset' : 'arrayBar'} key={idx} style={{ height: `${value}px` }}>
+                            <div className='arrayBar' key={idx} style={{ height: `${value}px` }}>
                                 .
                             </div>
                         )
