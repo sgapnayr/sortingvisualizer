@@ -14,10 +14,6 @@ const PRIMARY_COLOR = `rgb(39, 35, 44)`;
 const SECONDARY_COLOR = `rgba(0, 213, 255, .75)`;
 
 function SortingVisualizer() {
-    $("body,html").animate({
-        scrollTop: 1
-    }, 0);
-
     const [array, setArray] = useState([158, 154, 194, 78, 61, 252, 225, 315, 262, 224, 323, 67, 216, 318, 151, 71, 303, 192, 176, 299])
 
     const resetArray = () => {
