@@ -19,6 +19,7 @@
   background: rgb(18, 17, 17);
 }
 
+
 .title {
   background: rgb(20, 244, 255);
   background: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%);
@@ -47,4 +48,8 @@
 
 strong {
   color: rgb(255, 40, 251);
+}
+
+.ShrinkWrap {
+  transform: scale(.8);
 }

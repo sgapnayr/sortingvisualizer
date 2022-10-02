@@ -54,26 +54,28 @@ function SortingVisualizer() {
 
     return (
         <>
-            <div className="App" data-aos='fade' data-aos-duration='700'>
-                <div className="title" data-aos='fade-down' data-aos-duration='700'>
-                    <h2><strong>Sorting Visualizer</strong></h2>
-                </div>
-
-                <div className="titleReflection" >asdf</div>
-
-                <div className="Wrapper">
-                    <div className="arrayContainer">
-                        {array.map((value, idx) => {
-                            return (
-                                <div className='arrayBar' key={idx} style={{ height: `${value}px` }}>
-                                    .
-                                </div>
-                            )
-                        })}
+            <div className="ShrinkWrap">
+                <div className="App" data-aos='fade' data-aos-duration='700'>
+                    <div className="title" data-aos='fade-down' data-aos-duration='700'>
+                        <h2><strong>Sorting Visualizer</strong></h2>
                     </div>
-                    <div className="buttonContainer">
-                        <button onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
-                        <button onClick={() => mergeSort(array)}>Sort</button>
+
+                    <div className="titleReflection" >asdf</div>
+
+                    <div className="Wrapper">
+                        <div className="arrayContainer">
+                            {array.map((value, idx) => {
+                                return (
+                                    <div className='arrayBar' key={idx} style={{ height: `${value}px` }}>
+                                        .
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        <div className="buttonContainer">
+                            <button onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
+                            <button onClick={() => mergeSort(array)}>Sort</button>
+                        </div>
                     </div>
                 </div>
             </div>
