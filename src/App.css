@@ -30,7 +30,7 @@
   border: 2px solid rgb(20, 244, 255);
   border-image: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%) 1;
   border-radius: 5px;
-  padding: 1rem;
+  padding: .75rem;
   box-shadow: 1px 1px 12px rgba(255, 255, 255, .1);
 }
 
