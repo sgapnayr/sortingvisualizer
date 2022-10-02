@@ -11,7 +11,7 @@ const PRIMARY_COLOR = `rgb(39, 35, 44)`;
 const SECONDARY_COLOR = `rgba(0, 213, 255, .75)`;
 
 function SortingVisualizer() {
-    const [array, setArray] = useState([82, 205, 148, 398, 452, 77, 42, 203, 407, 66, 279, 245, 273, 438, 397, 112, 259, 235, 201, 119])
+    const [array, setArray] = useState([158, 154, 194, 78, 61, 252, 225, 345, 262, 224, 328, 67, 216, 331, 151, 71, 333, 192, 176, 299])
 
     const resetArray = () => {
         const array = []
