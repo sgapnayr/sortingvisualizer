@@ -61,7 +61,7 @@ function SortingVisualizer() {
 
                 <div className="titleReflection" >asdf</div>
 
-                <div className="Wrapper">
+                <div className="Wrapper" data-aos='fade-up' data-aos-duration='500'>
                     <div className="arrayContainer">
                         {array.map((value, idx) => {
                             return (
