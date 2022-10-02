@@ -72,8 +72,8 @@ function SortingVisualizer() {
                         })}
                     </div>
                     <div className="buttonContainer">
-                        <button data-aos='fade-right' data-aos-duration='300' onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
-                        <button data-aos='fade-right' data-aos-duration='500' onClick={() => mergeSort(array)}>Sort</button>
+                        <button onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
+                        <button onClick={() => mergeSort(array)}>Sort</button>
                     </div>
                 </div>
             </div>
