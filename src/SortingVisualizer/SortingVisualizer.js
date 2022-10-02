@@ -61,7 +61,7 @@ function SortingVisualizer() {
 
                 <div className="titleReflection" >asdf</div>
 
-                <div className="Wrapper" data-aos='fade-up' data-aos-duration='500'>
+                <div className="Wrapper">
                     <div className="arrayContainer">
                         {array.map((value, idx) => {
                             return (
@@ -72,8 +72,8 @@ function SortingVisualizer() {
                         })}
                     </div>
                     <div className="buttonContainer">
-                        <button onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
-                        <button onClick={() => mergeSort(array)}>Sort</button>
+                        <button data-aos='fade-right' data-aos-duration='300' onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
+                        <button data-aos='fade-right' data-aos-duration='500' onClick={() => mergeSort(array)}>Sort</button>
                     </div>
                 </div>
             </div>
