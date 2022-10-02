@@ -36,11 +36,11 @@
 
 .reset {
     color: rgb(0, 213, 255);
-    margin: 2px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    margin: 1px;
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.05);
     border-radius: 5px;
     flex: 1;
-    transition: .25s all ease-in-out;
+    transition: .05s all ease-in-out;
     text-shadow: 1px 1px 15px rgba(0, 213, 255, 1);
     background: none;
 }
