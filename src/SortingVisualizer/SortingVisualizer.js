@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { getMergeSortAnimations } from '../SortingAlgorithmns/sortingAlgorithmns';
 import './SortingVisualizer.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const ANIMATION_SPEED_MS = 30;
 
@@ -51,25 +54,27 @@ function SortingVisualizer() {
 
     return (
         <>
-            <div className="title">
-                <h2><strong>Sorting Visualizer</strong></h2>
-            </div>
-
-            <div className="titleReflection">asdf</div>
-
-            <div className="Wrapper">
-                <div className="arrayContainer">
-                    {array.map((value, idx) => {
-                        return (
-                            <div className='arrayBar' key={idx} style={{ height: `${value}px` }}>
-                                .
-                            </div>
-                        )
-                    })}
+            <div className="App" data-aos='fade'>
+                <div className="title" data-aos='fade-down' data-aos-duration='700'>
+                    <h2><strong>Sorting Visualizer</strong></h2>
                 </div>
-                <div className="buttonContainer">
-                    <button onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
-                    <button onClick={() => mergeSort(array)}>Sort</button>
+
+                <div className="titleReflection" >asdf</div>
+
+                <div className="Wrapper">
+                    <div className="arrayContainer">
+                        {array.map((value, idx) => {
+                            return (
+                                <div className='arrayBar' key={idx} style={{ height: `${value}px` }}>
+                                    .
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div className="buttonContainer">
+                        <button data-aos='fade-right' data-aos-duration='300' onClick={() => resetArray(PRIMARY_COLOR, SECONDARY_COLOR)}>Reset</button>
+                        <button data-aos='fade-right' data-aos-duration='500' onClick={() => mergeSort(array)}>Sort</button>
+                    </div>
                 </div>
             </div>
         </>
