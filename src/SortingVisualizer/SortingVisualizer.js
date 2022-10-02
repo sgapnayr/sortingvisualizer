@@ -16,7 +16,7 @@ function SortingVisualizer() {
     const resetArray = () => {
         const array = []
         for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-            array.push(randomNumber(25, 350))
+            array.push(randomNumber(25, 325))
         }
         setArray(array)
     }
