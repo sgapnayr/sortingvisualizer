@@ -54,7 +54,7 @@ function SortingVisualizer() {
 
     return (
         <>
-            <div className="App" data-aos='fade'>
+            <div className="App" data-aos='fade' data-aos-duration='300'>
                 <div className="title" data-aos='fade-down' data-aos-duration='700'>
                     <h2><strong>Sorting Visualizer</strong></h2>
                 </div>
