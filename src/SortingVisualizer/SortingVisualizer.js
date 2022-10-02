@@ -6,7 +6,7 @@ const ANIMATION_SPEED_MS = 10;
 
 const NUMBER_OF_ARRAY_BARS = 20;
 
-const PRIMARY_COLOR = `rgba(255, 0, 237, .75)`;
+const PRIMARY_COLOR = `rgb(34, 30, 38)`;
 
 const SECONDARY_COLOR = `rgba(0, 213, 255, .75)`;
 

@@ -35,11 +35,12 @@
 
 
 .titleReflection {
-  width: 75%;
+  width: 50%;
   background: rgb(20, 244, 255);
   background: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%);
-  transform: perspective(1em) rotateX(18deg);
+  transform: perspective(3em) rotateX(30deg);
   filter: blur(1em);
+  border-radius: 50%;
   margin-top: 1rem;
 }
 
