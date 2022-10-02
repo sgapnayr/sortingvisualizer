@@ -1,10 +1,10 @@
 .Wrapper {
     height: 70vh;
     width: 80vw;
-    background: transparent;
-    backdrop-filter: blur(18px);
+    background: rgba(0, 0, 0, .25);
+    backdrop-filter: blur(20px);
     border-radius: 7px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     padding: 1rem;
     font-family: Poppins;
     justify-content: center;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 1rem;
+    margin: .5rem;
     height: 100vh;
     width: 100%;
     padding: 1rem;
@@ -26,12 +26,12 @@
 .arrayBar {
     color: rgb(0, 213, 255);
     margin: 1px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.05);
     border-radius: 5px;
     flex: 1;
-    transition: .25s all ease-in-out;
+    transition: .05s all ease-in-out;
     text-shadow: 1px 1px 15px rgba(0, 213, 255, 1);
-    background: none
+    background: none;
 }
 
 .reset {
@@ -62,19 +62,25 @@ button {
     margin: 0 .5rem;
     transition: .2s all ease-in-out;
     background: transparent;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .5);
     font-weight: bold;
+    border: 2px solid rgb(20, 244, 255);
+    border-image: linear-gradient(138deg, rgba(20, 244, 255, 1) 0%, rgba(255, 0, 237, 1) 100%) 1;
+    background: linear-gradient(138deg, rgba(20, 244, 255, 1) 25%, rgba(255, 0, 237, 1) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 button:hover {
     transform: scale(1.1);
     box-shadow: 1px 1px 12px rgba(255, 40, 251, .5);
     background: rgb(255, 40, 251);
-    color: rgb(199, 105, 196);
+    color: white;
+    border-image: rgb(255, 40, 251)
 }
 
 button:active {
     background-color: rgba(0, 213, 255, 1);
-    box-shadow: 0 5px #777;
-    transform: scale(.85);
+    box-shadow: 0 -5px #777;
+    transform: translateY(10%);
 }

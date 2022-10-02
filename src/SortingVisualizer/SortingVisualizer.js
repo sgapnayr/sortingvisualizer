@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { getMergeSortAnimations } from '../SortingAlgorithmns/sortingAlgorithmns';
 import './SortingVisualizer.css'
 
-const ANIMATION_SPEED_MS = 10;
+const ANIMATION_SPEED_MS = 30;
 
 const NUMBER_OF_ARRAY_BARS = 20;
 
-const PRIMARY_COLOR = `rgb(34, 30, 38)`;
+const PRIMARY_COLOR = `rgb(39, 35, 44)`;
 
 const SECONDARY_COLOR = `rgba(0, 213, 255, .75)`;
 
@@ -15,7 +15,6 @@ function SortingVisualizer() {
     const [isSorting, setIsSorting] = useState(false)
 
     const resetArray = () => {
-        const arrayBars = document.getElementsByClassName('arrayBar');
         const array = []
         for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
             array.push(randomNumber(25, 500))
